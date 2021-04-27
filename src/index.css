@@ -1,0 +1,60 @@
+body {
+  display: grid;
+  grid-template-rows: 150px auto 150px;
+  grid-column: auto;
+  grid-template-areas: head main foot;
+}
+
+header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 44, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: arial;
+  font-size: 16px;
+  padding: 16px;
+  grid-area: head;
+  color: #fff;
+}
+
+footer {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 44, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: arial;
+  font-size: 16px;
+  padding: 16px;
+  color: #fff;
+  grid-area: foot;
+}
+
+.my-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 150px auto auto;
+  grid-template-areas: "side graph1 graph2" "side graph3 graph4";
+}
+
+aside {
+  grid-area: side;
+}
+
+.graph1 {
+  grid-area: graph1;
+}
+.graph2 {
+  grid-area: graph2;
+}
+.graph3 {
+  grid-area: graph3;
+}
+.graph4 {
+  grid-area: graph4;
+}
